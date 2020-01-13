@@ -24,7 +24,7 @@
 /** Time event was created. */
 @property (assign, readonly) double timestamp;
 
-@property (nonatomic, assign, readwrite) M5MultitouchTouch *multiTouch;
+@property (assign, readonly) M5MultitouchTouch *multiTouch;
 
 #pragma mark -
 

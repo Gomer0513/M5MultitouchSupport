@@ -15,6 +15,7 @@
 @property (assign, readwrite) int deviceID;
 @property (assign, readwrite) int frameID;
 @property (assign, readwrite) double timestamp;
+@property (nonatomic, assign, readwrite) M5MultitouchTouch *multiTouch;
 
 #pragma mark -
 
