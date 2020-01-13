@@ -16,7 +16,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"Touches: %@, Device ID: %i, Frame ID: %i, Timestamp: %f", _touches.description, _deviceID, _frameID, _timestamp];
+    return [NSString stringWithFormat:@"Touches1: %@, Device ID: %i, Frame ID: %i, Timestamp: %f", _touches, _deviceID, _frameID, _timestamp];
 }
 
 #pragma mark -
