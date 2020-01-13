@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "M5MTDefinesInternal.h"
+#import "M5MultitouchTouch.h"
 
 @interface M5MultitouchEvent : NSObject
 
@@ -24,7 +24,7 @@
 /** Time event was created. */
 @property (assign, readonly) double timestamp;
 
-@property (nonatomic, assign, readwrite) MTTouch *touch;
+@property (nonatomic, assign, readwrite) M5MultitouchTouch *multiTouch;
 
 #pragma mark -
 

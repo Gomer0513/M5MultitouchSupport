@@ -11,8 +11,8 @@
 
 #pragma mark Properties
 
-- (MTTouch *) touch {
-  return _touch;
+- (M5MultitouchTouch *) multiTouch {
+  return _multiTouch;
 }
 
 - (NSString *)description {
