@@ -141,6 +141,7 @@ static void mtEventHandler(MTDeviceRef mtEventDevice, MTTouch mtEventTouches[], 
     multitouchEvent.deviceID = (int)mtEventDevice;
     multitouchEvent.frameID = mtEventFrameId;
     multitouchEvent.timestamp = mtEventTimestamp;
+    multitouchEvent.touch = &(mtEventTouches[mtEventTouchesNum]);
     
     [M5MultitouchManager.sharedManager handleMultitouchEvent:multitouchEvent];
 }

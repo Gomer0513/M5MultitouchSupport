@@ -4,6 +4,7 @@
 //
 
 #import "M5MultitouchEvent.h"
+#import "M5MTDefinesInternal.h"
 
 @interface M5MultitouchEvent ()
 
@@ -15,6 +16,7 @@
 @property (assign, readwrite) int deviceID;
 @property (assign, readwrite) int frameID;
 @property (assign, readwrite) double timestamp;
+@property (assign, readwrite) MTTouch *touch;
 
 #pragma mark -
 
