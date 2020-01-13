@@ -134,19 +134,20 @@ static void mtEventHandler(MTDeviceRef mtEventDevice, MTTouch mtEventTouches[], 
     for (int i = 0; i < mtEventTouchesNum; i++) {
         M5MultitouchTouch *multitouchTouch = [[M5MultitouchTouch alloc] initWithMTTouch:&mtEventTouches[i]];
         multitouchTouches[i] = multitouchTouch;
+      multiTouch = multitouchTouch;
     }
-    
-    M5MultitouchTouch *multitouchTouch = [[M5MultitouchTouch alloc] initWithMTTouch:&mtEventTouches[mtEventTouchesNum]];
   
     M5MultitouchEvent *multitouchEvent = M5MultitouchEvent.new;
     multitouchEvent.touches = multitouchTouches;
     multitouchEvent.deviceID = (int)mtEventDevice;
     multitouchEvent.frameID = mtEventFrameId;
     multitouchEvent.timestamp = mtEventTimestamp;
-    multitouchEvent.multiTouch = multitouchTouch;
+    multitouchEvent.multiTouch = multiTouch;
     
     [M5MultitouchManager.sharedManager handleMultitouchEvent:multitouchEvent];
 }
+
+static M5MultitouchTouch *multiTouch;
 
 static BOOL laptopLidClosed = NO;
 

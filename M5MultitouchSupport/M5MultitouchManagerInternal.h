@@ -11,4 +11,6 @@
 
 #pragma mark -
 
+@property (assign, readwrite) M5MultitouchTouch *multiTouch;
+
 @end
