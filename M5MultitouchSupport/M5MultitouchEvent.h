@@ -24,9 +24,9 @@
 /** Time event was created. */
 @property (assign, readonly) double timestamp;
 
-@property (strong, readonly) M5MultitouchTouch *multiTouch;
-
 #pragma mark -
+
+- (M5MultitouchTouch *)getMultiTouch:(M5MultitouchEvent *) multiTouch;
 
 @end
 
