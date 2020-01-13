@@ -14,10 +14,10 @@
 - (M5MultitouchTouch *) getMultiTouch {
   return _multiTouch;
 }
-
-- (NSString *)description {
-    return [NSString stringWithFormat:@"Touches1: %@, Device ID: %i, Frame ID: %i, Timestamp: %f", _touches, _deviceID, _frameID, _timestamp];
-}
+//
+//- (NSString *)description {
+//    return [NSString stringWithFormat:@"Touches1: %@, Device ID: %i, Frame ID: %i, Timestamp: %f", _touches, _deviceID, _frameID, _timestamp];
+//}
 
 #pragma mark -
 
