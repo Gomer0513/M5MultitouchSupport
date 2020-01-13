@@ -26,7 +26,7 @@
 
 #pragma mark -
 
-- (M5MultitouchTouch *)getMultiTouch:(M5MultitouchEvent *) multiTouch;
+- (M5MultitouchTouch *)getMultiTouch;
 
 @end
 
