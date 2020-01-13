@@ -11,7 +11,7 @@
 
 #pragma mark Properties
 
-- (M5MultitouchTouch *) multiTouch {
+- (M5MultitouchTouch *) getMultiTouch {
   return _multiTouch;
 }
 
